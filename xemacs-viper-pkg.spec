@@ -2,7 +2,7 @@ Summary:	VI emulation support
 Summary(pl):	Emulacja VI
 Name:		xemacs-viper-pkg
 %define 	srcname	viper
-Version:	1.31
+Version:	1.33
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
