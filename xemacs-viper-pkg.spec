@@ -10,11 +10,14 @@ Group(de):	Applikationen/Editors/Emacs
 Group(pl):	Aplikacje/Edytory/Emacs
 Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
 Patch0:		%{name}-info.patch
+BuildRequires:	texinfo
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
+VI emulation support.
 
 %description -l pl 
+Emulacja VI.
 
 %prep
 %setup -q -c
@@ -25,9 +28,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
+install -d $RPM_BUILD_ROOT{%{_datadir}/xemacs-packages,%{_infodir}}
+
 cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
-install -d $RPM_BUILD_ROOT%{_infodir}
 mv -f  $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info/*.info* $RPM_BUILD_ROOT%{_infodir}
 rm -fr $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info
 
@@ -44,8 +47,8 @@ rm -fr $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc lisp/viper/{README,ChangeLog}*
 %{_datadir}/xemacs-packages%{_sysconfdir}/*
-%{_infodir}/*
 %dir %{_datadir}/xemacs-packages/lisp/*
 %{_datadir}/xemacs-packages/lisp/*/*.elc
-%doc lisp/viper/README.gz lisp/viper/ChangeLog.gz
+%{_infodir}/*
