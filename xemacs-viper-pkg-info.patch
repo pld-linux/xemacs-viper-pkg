@@ -1,0 +1,25 @@
+diff -Nur xemacs-viper-pkg-1.18/man/viper/viper.texi xemacs-viper-pkg-1.18.new/man/viper/viper.texi
+--- xemacs-viper-pkg-1.18/man/viper/viper.texi	Sun Nov 28 19:32:51 1999
++++ xemacs-viper-pkg-1.18.new/man/viper/viper.texi	Sun Mar 26 15:10:41 2000
+@@ -4,14 +4,16 @@
+ @comment Using viper.info instead of viper in setfilename breaks DOS.
+ @comment @setfilename viper
+ @comment @setfilename viper.info
+-@setfilename ../info/viper
++@setfilename ../../info/viper.info
+ 
+-@dircategory Editors
++@ifinfo
++@format
++@dircategory XEmacs Editor:
+ @direntry
+-* VIPER: (viper).       The newest Emacs VI-emulation mode.
+-                          (also, A VI Plan for Emacs Rescue
+-                           or the VI PERil.)
++* VIPER: (viper).                       The newest Emacs VI-emulation mode.
+ @end direntry
++@end format
++@end ifinfo
+ 
+ @iftex
+ @finalout
