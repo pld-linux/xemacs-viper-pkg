@@ -1,14 +1,15 @@
 Summary:	VI emulation support
-Summary(pl):	VI emulation support
+Summary(pl):	Emulacja VI
 Name:		xemacs-viper-pkg
 %define 	srcname	viper
 Version:	1.26
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
+Group(de):	Applikationen/Editors/Emacs
 Group(pl):	Aplikacje/Edytory/Emacs
 Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
-Patch0:		xemacs-viper-pkg-info.patch
+Patch0:		%{name}-info.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -30,8 +31,7 @@ install -d $RPM_BUILD_ROOT%{_infodir}
 mv -f  $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info/*.info* $RPM_BUILD_ROOT%{_infodir}
 rm -fr $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info
 
-gzip -9nf $RPM_BUILD_ROOT%{_infodir}/*.info* \
-	lisp/viper/README lisp/viper/ChangeLog 
+gzip -9nf lisp/viper/README lisp/viper/ChangeLog 
 
 %clean
 rm -fr $RPM_BUILD_ROOT
