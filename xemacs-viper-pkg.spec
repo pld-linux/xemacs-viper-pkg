@@ -14,7 +14,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 VI emulation support.
 
-%description -l pl 
+%description -l pl
 Emulacja VI.
 
 %prep
@@ -32,7 +32,7 @@ cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 mv -f  $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info/*.info* $RPM_BUILD_ROOT%{_infodir}
 rm -fr $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info
 
-gzip -9nf lisp/viper/README lisp/viper/ChangeLog 
+gzip -9nf lisp/viper/README lisp/viper/ChangeLog
 
 %clean
 rm -fr $RPM_BUILD_ROOT
