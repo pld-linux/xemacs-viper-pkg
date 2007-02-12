@@ -1,5 +1,5 @@
 Summary:	VI emulation support
-Summary(pl):	Emulacja VI
+Summary(pl.UTF-8):   Emulacja VI
 Name:		xemacs-viper-pkg
 %define 	srcname	viper
 Version:	1.37
@@ -15,7 +15,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 VI emulation support.
 
-%description -l pl
+%description -l pl.UTF-8
 Emulacja VI.
 
 %prep
