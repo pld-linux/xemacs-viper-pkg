@@ -6,7 +6,7 @@ Version:	1.37
 Release:	2
 License:	GPL
 Group:		Applications/Editors/Emacs
-Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
+Source0:	http://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
 # Source0-md5:	5bd6157ea98d1cc9399e91eb3b684c8c
 Patch0:		%{name}-info.patch
 BuildRequires:	texinfo
