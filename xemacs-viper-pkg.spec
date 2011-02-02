@@ -51,4 +51,4 @@ rm -fr $RPM_BUILD_ROOT
 %{_datadir}/xemacs-packages%{_sysconfdir}/*
 %dir %{_datadir}/xemacs-packages/lisp/*
 %{_datadir}/xemacs-packages/lisp/*/*.el*
-%{_infodir}/*
+%{_infodir}/*.info*
