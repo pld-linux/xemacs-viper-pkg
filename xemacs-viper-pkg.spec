@@ -2,12 +2,12 @@ Summary:	VI emulation support
 Summary(pl.UTF-8):	Emulacja VI
 Name:		xemacs-viper-pkg
 %define 	srcname	viper
-Version:	1.37
-Release:	2
+Version:	1.67
+Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
 Source0:	http://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
-# Source0-md5:	5bd6157ea98d1cc9399e91eb3b684c8c
+# Source0-md5:	5913b7a644053f279b578ed469b384d0
 Patch0:		%{name}-info.patch
 BuildRequires:	texinfo
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
