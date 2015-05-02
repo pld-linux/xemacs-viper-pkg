@@ -3,7 +3,7 @@ Summary(pl.UTF-8):	Emulacja VI
 Name:		xemacs-viper-pkg
 %define 	srcname	viper
 Version:	1.67
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Editors/Emacs
 Source0:	http://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
